@@ -1,0 +1,54 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Software Engineer",
+      "company": "Tech Corp",
+      "location": "New York",
+      "description": "Full-stack developer position",
+      "requirements": ["React", "Node.js", "MongoDB"],
+      "salary": "100000",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "title": "UX Designer",
+      "company": "Design Studio",
+      "location": "San Francisco",
+      "description": "Senior UX designer role",
+      "requirements": ["Figma", "Adobe XD", "User Research"],
+      "salary": "90000",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "title": "Data Scientist",
+      "company": "Analytics Co",
+      "location": "Boston",
+      "description": "Senior Data Scientist position focusing on ML models",
+      "requirements": ["Python", "TensorFlow", "SQL", "Statistics"],
+      "salary": "120000",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "title": "DevOps Engineer",
+      "company": "Cloud Systems Inc",
+      "location": "Remote",
+      "description": "Managing cloud infrastructure and CI/CD pipelines",
+      "requirements": ["AWS", "Docker", "Kubernetes", "Jenkins"],
+      "salary": "115000",
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "title": "Mobile Developer",
+      "company": "App Makers",
+      "location": "Seattle",
+      "description": "Developing cross-platform mobile applications",
+      "requirements": ["React Native", "iOS", "Android", "Firebase"],
+      "salary": "95000",
+      "status": "active"
+    }
+  ]
+} 
