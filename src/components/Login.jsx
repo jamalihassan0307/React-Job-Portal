@@ -1,28 +1,32 @@
-import { useState } from 'react';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const funLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get('https://676bcc0bbc36a202bb85bb5b.mockapi.io/api/jobs/userstable');
+      const response = await axios.get(
+        "https://676bcc0bbc36a202bb85bb5b.mockapi.io/api/jobs/userstable"
+      );
       const users = response.data;
-      const user = users.find(u => u.email === email && u.password === password);
+      const user = users.find(
+        (u) => u.email === email && u.password === password
+      );
       console.log(user);
       if (user) {
-        localStorage.setItem('user', JSON.stringify(user));
-        navigate('/');
+        localStorage.setItem("user", JSON.stringify(user));
+        navigate("/");
       } else {
-        alert('Invalid credentials');
+        alert("Invalid credentials");
       }
     } catch (error) {
-      console.error('Login error:', error);
-      alert('Login failed');
+      console.error("Login error:", error);
+      alert("Login failed");
     }
   };
 
@@ -50,7 +54,9 @@ function Login() {
             style={styles.input}
           />
         </div>
-        <button type="submit" style={styles.button}>Login</button>
+        <button type="submit" style={styles.button}>
+          Login
+        </button>
       </form>
     </div>
   );
@@ -58,39 +64,39 @@ function Login() {
 
 const styles = {
   container: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    backgroundColor: '#ef9d10',
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+    backgroundColor: "#ef9d10",
   },
   form: {
-    backgroundColor: 'YELLOW',
-    padding: '2rem',
-    borderRadius: '8px',
-    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-    width: '100%',
-    maxWidth: '400px',
+    backgroundColor: "YELLOW",
+    padding: "2rem",
+    borderRadius: "8px",
+    boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+    width: "100%",
+    maxWidth: "400px",
   },
   inputGroup: {
-    marginBottom: '1rem',
+    marginBottom: "1rem",
   },
   input: {
-    width: '100%',
-    padding: '0.75rem',
-    borderRadius: '4px',
-    border: '1px solid #ddd',
-    marginBottom: '1rem',
+    width: "100%",
+    padding: "0.75rem",
+    borderRadius: "4px",
+    border: "1px solid #ddd",
+    marginBottom: "1rem",
   },
   button: {
-    width: '100%',
-    padding: '0.75rem',
-    backgroundColor: '#007bff',
-    color: 'RED',
-    border: 'none',
-    borderRadius: '8px',
-    cursor: 'pointer',
+    width: "100%",
+    padding: "0.75rem",
+    backgroundColor: "#007bff",
+    color: "RED",
+    border: "none",
+    borderRadius: "8px",
+    cursor: "pointer",
   },
 };
 
-export default Login; 
+export default Login;
