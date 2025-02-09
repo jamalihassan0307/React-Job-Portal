@@ -34,28 +34,43 @@ Check out the live demo: [https://job-portal-jamalihassan0307.web.app](https://j
 
 #### 1. Authentication
 
-![Login Page](screenshots/loginpage.png)
+![Login Page](screenshots/login.png)
 _Secure user authentication interface for accessing the portal_
 
 #### 2. Home Page
 
-![Home Page](screenshots/homepage.png)
+![Home Page](screenshots/home_page.png)
 _Landing page showcasing featured job opportunities and quick search_
 
 #### 3. Jobs Listing
 
-![Jobs Page](screenshots/jobspage.png)
+![Jobs Page](screenshots/view_all_job.png)
 _Comprehensive job board with advanced search and filtering options_
 
 #### 4. Job Details
 
-![Job Details](screenshots/jobdetails.png)
+![Job Details](screenshots/job_view.png)
 _In-depth view of job postings with application options_
 
 #### 5. Admin Dashboard
 
-![Admin Dashboard](screenshots/admindashboard.png)
+![Admin Dashboard](screenshots/job_view_admin.png)
 _Powerful admin interface for managing job listings and user accounts_
+
+#### 6. Add Job
+
+![Add Job](screenshots/add_job.png)
+_Interface for posting new job listings_
+
+#### 7. Profile Management
+
+![Profile Page](screenshots/profile_page.png)
+_User profile management interface_
+
+#### 8. Job Loading State
+
+![Job Loading](screenshots/job_loading.png)
+_Smooth loading transitions between job views_
 
 ## 🚀 Features
 
