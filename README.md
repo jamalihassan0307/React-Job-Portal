@@ -28,6 +28,22 @@ A modern job portal application built with React and Firebase, featuring job lis
 
 Check out the live demo: [https://job-portal-jamalihassan0307.web.app](https://job-portal-jamalihassan0307.web.app)
 
+### Demo Credentials
+
+#### Admin Access
+
+- **Email:** admin@gmail.com
+- **Password:** admin
+- **Role:** Administrator
+
+#### User Access
+
+- **Email:** demo@gmail.com
+- **Password:** 1234
+- **Role:** Regular User
+
+_Feel free to use these credentials to explore different features of the application_
+
 ## 📸 Screenshots
 
 ### User Journey
